@@ -1,0 +1,19 @@
+[package]
+name = "brf-macro"
+version = "0.1.0"
+authors = ["Alex Moon"]
+edition = "2021"
+description = "A simple macro to convert North American ASCII Braille to Unicode Braille"
+documentation = "https://docs.rs/brf-macro"
+repository = "https://github.com/alexmoon/brf-macro"
+license = "MIT OR Apache-2.0"
+keywords = ["braille", "accessibility", "macro"]
+categories = ["accessibility", "text-processing", "value-formatting"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.46"
+quote = "1.0.21"
+syn = "1.0.102"

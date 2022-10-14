@@ -1,0 +1,24 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: rustup component add clippy
+
+      - name: Format Rust code
+        run: cargo fmt --all -- --check
+
+      - name: Clippy
+        run: cargo clippy --workspace -- -D warnings
+
+      - name: Test
+        run: cargo test --workspace
