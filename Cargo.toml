@@ -1,6 +1,6 @@
 [package]
 name = "brf-macro"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Alex Moon"]
 edition = "2021"
 description = "A simple macro to convert North American ASCII Braille to Unicode Braille"
@@ -14,6 +14,7 @@ categories = ["accessibility", "text-processing", "value-formatting"]
 proc-macro = true
 
 [dependencies]
+braille-ascii = "0.1.0"
 proc-macro2 = "1.0.46"
 quote = "1.0.21"
 syn = "1.0.102"

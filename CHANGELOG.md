@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.2
+
+- Use the `braille-ascii` crate for the underlying encoding functions
+
 ## 0.1.1
 
 - Added `brf_bytes` macro
